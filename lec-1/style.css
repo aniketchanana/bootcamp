@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+.section1{
+    background:url('./hiker-1149898_1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.welcome__font{
+    font-size: 40px;
+    color: rgba(255,255, 255,0.9);
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+}
+
+.link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: rgba(255,255, 255,0.7);
+    text-decoration: none;
+    transition: 0.4s ease;
+}
+
+.link:hover{
+    color: rgba(255,255, 255,1);
+}
+
+.section{
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#travel{
+    background: url('./paris.jpg');
+}
+#adventure{
+    background: url('./rafting.jpg');
+}
+#explore{
+    background: url('./explore.jpg');
+}
+.section__font__section{
+    background-color: rgba(0,0,0,0.4);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.font__container {
+    width: 60%;
+    background-color: rgba(255,255, 255,0.7);
+    padding: 20px;
+    color: rgba(0,0,0,0.7);
+}
+
+.city{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 5px;
+    letter-spacing: 5px;
+}
+
+.city__description{
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+  background: rgba(95,52,175,0.5);
+}
+   
+
+::-webkit-scrollbar-thumb {
+  background: rgba(95,52,175,1.0); 
+}
+  
+footer{
+    text-align: center;
+    background-color: rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: rgb(255,255, 255);
+    letter-spacing: 5px;
+}

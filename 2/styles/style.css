@@ -1,0 +1,65 @@
+.strikeOut {
+    text-decoration: line-through;
+}
+
+body,html{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url('../images/todolist.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todolist{
+    width: 30%;
+    height: 70vh;
+    background-color: #ededed;
+    padding: 30px;
+    overflow-y: scroll;
+}
+
+#todo {
+    width: 70%;
+    height: 30px;
+    font-size: 25px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.submitButton {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.inputContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul {
+    list-style: none;
+    margin-top: 50px;
+}
+
+.mytodo {
+    background-color: #fff;
+    font-size: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    margin-left: -20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 90%;
+}

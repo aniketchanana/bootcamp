@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html{
+            margin: 0;
+            padding: 0;
+        }
+       .test{
+           background-color: red;
+           height: 500px;
+       }
+       @media (max-width: 450px) {
+           .test{
+               width: 50%;
+           }
+       }
+       @media (min-width: 600px) {
+           .test {
+               width: 80%;
+               background-color: blue;
+           }
+       }
+       @media (min-width: 451px) and (max-width:599px)  {
+        .test{
+            background-color: green;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="test">
+
+    </div>
+</body>
+</html>

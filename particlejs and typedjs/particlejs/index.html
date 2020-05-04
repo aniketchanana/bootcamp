@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,html {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        #flag__container {
+            height: 100%;
+        }
+        #particles-js {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+        .strip {
+            height: 33.33%;
+        }
+        .orange {
+            background-color: orange;
+        }
+        .green {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div id="flag__container">
+        <div class="strip orange"></div>
+        <div class="strip"></div>
+        <div class="strip green"></div>
+    </div>
+</body>
+<script src="particles.js-master/particles.min.js"></script>
+<script src="particles.js-master/demo/js/app.js"></script>
+</html>

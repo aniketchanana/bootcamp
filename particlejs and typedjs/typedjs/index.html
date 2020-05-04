@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>typedjs</title>
+    <style>
+        #typedjs__container {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <span id="typedjs__container"></span>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script>
+var options = {
+  strings: ['var lockdown = opportunity; <br><br> while(lockdown) { <br> <br> learnNewThings(); <br><br> upgradeSkills(); <br><br>}'],
+  typeSpeed: 10,
+  backSpeed: 30,
+  loop: false,
+};
+
+var typed = new Typed('#typedjs__container', options);
+</script>
+</html>

@@ -1,0 +1,11 @@
+Japanese yen ---> JPY ¥
+India ---> INR ₹
+
+Bangladeshi taka ---> BDT ৳
+Chinese renminbi ---> CNY ¥
+
+British pound ---> GBP £
+Singapore dollar ---> SGD $
+
+Thai baht ---> THB ฿
+UAE dirham ---> AED "فلس"

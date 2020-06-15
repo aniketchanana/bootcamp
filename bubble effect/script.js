@@ -1,8 +1,10 @@
 const canvas = document.getElementById("bubble__canvas");
 const context = canvas.getContext("2d");
+canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;
 
 let circles = [];
-const NUM_CIRCLES = 1000;
+const NUM_CIRCLES = 500;
 
 for(let i=0;i<NUM_CIRCLES;i++) {
     let circleData = {};
@@ -21,14 +23,14 @@ for(let i=0;i<NUM_CIRCLES;i++) {
     circleData.yd = 1;
 
     //speed of the bubble particle
-    circleData.xv = Math.random()*2;
-    circleData.yv = Math.random()*2;
+    circleData.xv = Math.random()*4;
+    circleData.yv = Math.random()*4;
 
     circles.push(circleData);
 }
 
 function startAnimation() {
-     context.clearRect(0,0,1000,1000);
+     context.clearRect(0,0,canvas.width,canvas.height);
     for(let i=0;i<circles.length;i++) {
         context.beginPath();
         context.arc(circles[i].x, circles[i].y, circles[i].radius , 0,  2* Math.PI);
@@ -42,13 +44,13 @@ function startAnimation() {
 
 function moveCircles() {
     for(let i=0;i<circles.length;i++) {
-        if(circles[i].x + circles[i].xv >= 1000) {
+        if(circles[i].x + circles[i].xv >= canvas.width) {
             circles[i].xd = 0;
         }
         if(circles[i].x - circles[i].xv <= 0) {
             circles[i].xd = 1;
         }
-        if(circles[i].y + circles[i].yv >= 600) {
+        if(circles[i].y + circles[i].yv >= canvas.height) {
             circles[i].yd = 0;
         }
         if(circles[i].y - circles[i].yv <= 0) {
